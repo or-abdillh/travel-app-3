@@ -8,13 +8,15 @@
 </style>
 <template>
    <!-- List card -->
-   <div class="mt-3 flex gap-4">
+   <div
+   @click="router.push({ name: 'view' })"
+   class="mt-3 flex gap-4">
       <span>
          <img class="rounded-xl" src="../assets/mount-square.jpg" width="60" />
       </span>
       <div>
          <strong class="text-xs mb-0 w-full">Mt. Rinjani</strong>
-         <p class="text-xxxs text-gray-400">Semarang, Indonesia</p>
+         <p class="text-xxxs text-gray-400">Lombok, Indonesia</p>
       </div>
       <span class="text-xxxs gap-1 flex items-center">
          <i class="fa fa-star text-xxxs text-yellow-400"></i>
@@ -22,3 +24,9 @@
       </span>
    </div>
 </template>
+
+<script setup>
+   import { useRouter } from 'vue-router'
+   
+   const router = useRouter()
+</script>
