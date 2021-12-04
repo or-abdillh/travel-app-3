@@ -49,7 +49,7 @@
       </div>
       
       <!-- Recomendation for you -->
-      <div class="mt-5">
+      <div class="mt-5 mb-20">
          <div class="flex items-center text-gray-600 justify-between">
             <p>Recomendations</p>
             <i class="fa fa-chevron-down"></i>
@@ -59,12 +59,14 @@
          </template>
       </div>
    </section>
+   <Navbar></Navbar>
 </template>
 
 <script setup>
    import { ref } from 'vue'
    import Card from '../components/Card.vue'
    import List from '../components/List.vue'
+   import Navbar from '../components/Navbar.vue'
    
    const categories = ref([
          'Beach', 'Culture', 'Mountains', 'Forest'
