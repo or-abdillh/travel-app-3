@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Reset CSS */
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Montserrat', Sans-Serif;
+   font-size: 24px;
+}
