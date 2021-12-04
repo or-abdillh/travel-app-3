@@ -9,3 +9,7 @@
    font-family: 'Montserrat', Sans-Serif;
    font-size: 24px;
 }
+
+*::-webkit-scrollbar {
+   display: none;
+}
