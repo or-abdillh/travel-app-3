@@ -14,13 +14,7 @@
    .active {
       @apply bg-green-400 text-gray-50;
    }
-   .card {
-      min-width: 70%;
-      @apply rounded-xl relative overflow-hidden;
-   }
-   .card-footer {
-      @apply absolute bottom-2 left-2 right-2 rounded-xl p-2 bg-gray-50 flex items-start gap-1;
-   }
+   
 </style>
 
 <template>
@@ -50,18 +44,7 @@
       <!-- Card -->
       <div class="card-wrapper mt-6">
          <template v-for="card in 4" :key="card">
-            <div class="card">
-               <img src="../assets/mount.jpeg" />
-               <div class="card-footer">
-                  <div class="flex flex-wrap">
-                     <strong class="text-xxxs mb-0 w-full">Mt. Rinjani</strong>
-                     <p class="text-xxxs text-gray-400">Semarang, Indonesia</p>
-                  </div>
-                  <i
-                  @click="btnLove"
-                  class="far fa-heart duration-300 text-xs text-green-500"></i>
-               </div>
-            </div>
+            <Card></Card>
          </template>
       </div>
       
@@ -72,19 +55,7 @@
             <i class="fa fa-chevron-down"></i>
          </div>
          <template v-for="list in 8" :key="list">
-            <div class="mt-3 flex gap-4">
-               <span>
-                  <img class="rounded-xl" src="../assets/mount-square.jpg" width="60" />
-               </span>
-               <div>
-                  <strong class="text-xs mb-0 w-full">Mt. Rinjani</strong>
-                  <p class="text-xxxs text-gray-400">Semarang, Indonesia</p>
-               </div>
-               <span class="text-xxs flex items-center">
-                  <i class="fa fa-star text-xxxs text-yellow-400"></i>
-                  4.6
-               </span>
-            </div>
+            <List></List>
          </template>
       </div>
    </section>
@@ -92,17 +63,12 @@
 
 <script setup>
    import { ref } from 'vue'
+   import Card from '../components/Card.vue'
+   import List from '../components/List.vue'
    
    const categories = ref([
          'Beach', 'Culture', 'Mountains', 'Forest'
       ])
    //For active class category
    const activeBar = ref('Beach')   
-   
-   //handler icon like
-   const btnLove = e => {
-      const classses = e.target.classList
-      if (classses.contains('far')) classses.replace('far', 'fas')
-      else classses.replace('fas', 'far')
-   }
 </script>
