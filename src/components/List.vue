@@ -5,12 +5,25 @@
    .text-xxs {
       font-size: .75rem;
    }
+   
+   .list {
+      @apply mt-3 flex gap-4;
+      animation: list .3s ease-in-out forwards;
+   }
+   
+   @keyframes list {
+      from {
+         transform: translateY(-50%) scale(.75);
+      } to {
+         transform: translateY(0) scale(1);
+      }
+   }
 </style>
 <template>
    <!-- List card -->
    <div
    @click="router.push({ name: 'view' })"
-   class="mt-3 flex gap-4">
+   class="list">
       <span>
          <img class="rounded-xl" src="../assets/mount-square.jpg" width="60" />
       </span>

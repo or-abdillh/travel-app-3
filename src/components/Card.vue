@@ -4,11 +4,20 @@
    }
    .card {
       min-width: 70%;
+      animation: card .3s ease-in-out forwards;
       @apply rounded-xl relative overflow-hidden;
    }
    .card-footer {
       @apply absolute bottom-2 left-2 right-2 rounded-xl px-3 py-2 bg-gray-50 flex items-start gap-1;
    }
+   
+   @keyframes card {
+      from {
+         transform: translateX(-150%) scale(.75);
+      } to {
+         transform: translateX(0) scale(1);
+      }
+   } 
 </style>
 
 <template>
