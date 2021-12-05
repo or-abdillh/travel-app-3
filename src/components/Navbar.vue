@@ -1,10 +1,4 @@
 <style scoped>
-   .text-xxs {
-      font-size: .75rem;
-   }
-   .text-xxxs {
-      font-size: .4rem;
-   }
    .nav-wrapper {
       @apply fixed left-0 right-0 bottom-0;
    }
@@ -20,10 +14,10 @@
             @click="activeMenu = menu.name">
                <i v-if="activeMenu !== menu.name"
                :class="menu.icon"
-               class="text-gray-500"></i>
-               <span class="flex justify-center duration-300 flex-wrap" v-else>
+               class="duration-300 text-gray-500"></i>
+               <span class="duration-300 flex justify-center duration-300 flex-wrap" v-else>
                   <p class="text-xxs text-green-400 w-full text-center">{{ menu.name }}</p>
-                  <i class="text-xxxs text-green-400 fa fa-circle"></i>
+                  <i class="text-xxxxs text-green-400 fa fa-circle"></i>
                </span>
             </div>
          </template>

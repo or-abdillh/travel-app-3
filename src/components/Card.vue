@@ -1,7 +1,4 @@
 <style scoped>
-   .text-xxxs {
-      font-size: .55rem;
-   }
    .card {
       min-width: 70%;
       animation: card .3s ease-in-out forwards;
@@ -23,13 +20,14 @@
 <template>
    <!-- Card -->
    <div 
-   @click="router.push({ name: 'view' })"
    class="card">
       <img src="../assets/mount.jpeg" />
       <div class="card-footer">
-         <div class="flex flex-wrap">
+         <div 
+         @click="router.push({ name: 'view' })"
+         class="flex flex-wrap">
             <strong class="text-xxxs mb-0 w-full">Mt. Rinjani</strong>
-            <p class="text-xxxs text-gray-400">Lombok, Indonesia</p>
+            <p class="text-xxxxs text-gray-400">Lombok, Indonesia</p>
          </div>
          <i
          @click="isHeartClick = !isHeartClick"

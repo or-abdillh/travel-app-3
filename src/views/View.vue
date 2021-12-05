@@ -1,14 +1,11 @@
 <style scoped>
-   .text-xxs {
-      font-size: .65rem;
-   }
-   .text-xxxs {
-      font-size: .55rem;
-   }
    .bottom-sheets {
-      @apply p-6 w-full rounded-t-xl bg-white;
+      @apply p-6 w-full relative rounded-t-xl bg-white;
       animation: bottom-sheets .45s ease-in-out forwards;
       transform: translateY(-10%);
+   }
+   .btn {
+      @apply bg-green-600 ring-green-300 w-full rounded mt-8 text-gray-50 text-sm font-medium py-2 duration-300 focus:ring focus:bg-opacity-75;
    }
    @keyframes bottom-sheets {
       from {
@@ -31,9 +28,15 @@
             </div>
          </span>
       </div>
-      
       <!-- Bottom sheets -->
       <div class="bottom-sheets">
+         <!-- Button heart -->
+         <span class="absolute right-6 -top-4 bg-white px-2 py-1 rounded-full shadow">
+            <i
+            @click="isHeartClicked = !isHeartClicked"
+            :class="isHeartClicked ? 'fas' : 'far'"
+            class="duration-300 text-red-600 fa-heart"></i>
+         </span>
          <!-- The title -->
          <div class="flex items-center justify-between">
             <span>
@@ -53,7 +56,7 @@
          <!-- landscapes -->
          <div class="mt-5 flex gap-3">
             <template v-for="(landscape, index) in landscapes" :key="index">
-               <div class="">
+               <div>
                   <img class="rounded mb-1" src="../assets/mount-square.jpg" />
                   <p class="text-xxs text-center">{{ landscape }}</p>
                </div>
@@ -62,13 +65,13 @@
          <!-- Description -->
          <div class="mt-5">
             <p class="font-medium text-sm">Description</p>
-            <p class="text-xs">
+            <p class="text-xs text-gray-500">
                Lorem ipsum sit amet dolor Lorem ipsum sit amet dolor Lorem ipsum sit amet dolor Lorem ipsum sit amet dolor
             </p>
          </div>
          
          <!-- CTA -->
-         <button class="bg-green-500 w-full rounded mt-8 text-gray-50 text-sm py-2" type="button">Visit place</button>
+         <button class="btn" type="button">Visit place</button>
       </div>
 	</section>
 </template>
@@ -79,4 +82,5 @@
    
    const router = useRouter()
    const landscapes = ref(['Lake', 'Beach', 'Forest', 'Sunset'])
+   const isHeartClicked = ref(false)
 </script>
