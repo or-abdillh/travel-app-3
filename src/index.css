@@ -8,8 +8,14 @@
    padding: 0;
    font-family: 'Montserrat', Sans-Serif;
    font-size: 24px;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
 }
 
 *::-webkit-scrollbar {
    display: none;
+}
+
+body {
+	background: #EEEEEE;
 }

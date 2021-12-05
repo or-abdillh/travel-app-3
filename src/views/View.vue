@@ -4,9 +4,11 @@
       animation: bottom-sheets .45s ease-in-out forwards;
       transform: translateY(-10%);
    }
+   
    .btn {
       @apply bg-green-600 ring-green-300 w-full rounded mt-8 text-gray-50 text-sm font-medium py-2 duration-300 focus:ring focus:bg-opacity-75;
    }
+   
    @keyframes bottom-sheets {
       from {
          transform: translateY(150%) scale(.75);
@@ -21,7 +23,7 @@
       <div class="relative">
          <img src="../assets/mount.jpeg" class="w-full" alt="" />
          <span class="fixed left-0 right-0 top-0 px-6">
-            <div class="w-full py-4">
+            <div class="w-full md:w-8/12 lg:w-4/12 mx-auto py-4">
                <i
                @click="router.push({ name: 'home' })"
                class="fa fa-chevron-left bg-gray-50 px-2 py-1 text-green-700 z-50 rounded bg-opacity-75"></i>

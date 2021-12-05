@@ -1,9 +1,10 @@
 <style scoped>
    .nav-wrapper {
       @apply fixed left-0 right-0 bottom-0;
+      box-shadow: -3px 3px 12px whitesmoke;
    }
    .navbar {
-      @apply duration-300 w-full px-6 py-4 bg-gray-50 flex justify-between;
+      @apply duration-300 w-full md:w-8/12  lg:w-4/12 mx-auto px-6 py-4 bg-white flex justify-between;
    }
 </style>
 <template>
