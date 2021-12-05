@@ -20,6 +20,10 @@ by [@cirrustudio](https://instagram.com/cirrustudio?utm_medium=copy_link)
 - Vite Js
 - Acode code editor
 
+### Responsive Test
+Test via [Am I Responsive](http://ami.responsivedesign.is/)
+<img src="src/assets/banner-test.jpg" width="100%" alt="">
+
 ### Clone This Repo
 - <code>git clone https://github.com/or-abdillh/travel-app-3.git </code>
 - <code>cd travel-app-3</code>
@@ -28,7 +32,7 @@ by [@cirrustudio](https://instagram.com/cirrustudio?utm_medium=copy_link)
 
 ### Demo 
 - [Travel App](https://travel-app-3.vercel.app/)
-- [Reels Instagram]()
+- [Reels Instagram](https://www.instagram.com/reel/CXFyzdwlr0T/?utm_medium=copy_link)
 
 [Oka R Abdillah ](http://github.com/or-abdillh)
 <br>
