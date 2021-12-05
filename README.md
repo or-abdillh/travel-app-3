@@ -27,7 +27,7 @@ by [@cirrustudio](https://instagram.com/cirrustudio?utm_medium=copy_link)
 - <code>npm run dev</code>
 
 ### Demo 
-- [Travel App](https://doctalk.vercel.app/)
+- [Travel App](https://travel-app-3.vercel.app/)
 - [Reels Instagram]()
 
 [Oka R Abdillah ](http://github.com/or-abdillh)
