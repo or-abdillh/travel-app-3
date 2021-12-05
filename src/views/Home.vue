@@ -25,7 +25,7 @@
          <span class="text-xxs">Jakarta, Indonesia</span>
       </div>
       <!-- Wellcome notes -->
-      <h1 class="text-2xl font-medium mt-5">
+      <h1 class="text-2xl w-10/12 font-medium mt-5">
          Where do you like to go ? 👏
       </h1>
       
