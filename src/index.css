@@ -19,3 +19,7 @@
 body {
 	background: #EEEEEE;
 }
+
+.app {
+   @apply bg-white md:w-8/12 mx-auto lg:w-5/12 xl:w-4/12;
+}
